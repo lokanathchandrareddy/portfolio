@@ -1,8 +1,7 @@
 <template>
-  <header class="header">
-    <h1>Lokanath ChandraReddy</h1>
-    <p>Email: lokanathChandrareddy@gmail.com</p>
-    <p>Phone: (978)967-0958</p>
+  <header class="bg-gray-800 text-white py-8 text-center">
+    <h1 class="text-4xl font-bold">Lokanath ChandraReddy</h1>
+    <p class="mt-2 text-lg">lokanathchandrareddy@gmail.com | +1(978) 967-0958</p>
   </header>
 </template>
 <style scoped>

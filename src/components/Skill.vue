@@ -1,8 +1,14 @@
 <template>
-  <section class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li v-for="skill in skills" :key="skill">{{ skill }}</li>
+  <section class="bg-gray-100 p-6 rounded-lg shadow-md mt-8">
+    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+    <ul class="flex flex-wrap">
+      <li
+        v-for="skill in skills"
+        :key="skill"
+        class="bg-gray-200 p-2 m-2 rounded text-gray-800 font-semibold"
+      >
+        {{ skill }}
+      </li>
     </ul>
   </section>
 </template>
