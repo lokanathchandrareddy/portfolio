@@ -22,6 +22,7 @@ interface Education {
   degree: string
   institution: string
   date: string
+  icon: string
 }
 
 export default defineComponent({
