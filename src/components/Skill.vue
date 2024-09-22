@@ -13,19 +13,19 @@
   </section>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   data() {
     return {
-      skills: ['Vue.js', 'Nuxt.js', 'React', 'JavaScript', 'Node.js', 'TypeScript', 'TailwindCSS']
+      skills: ['Vue.js', 'Nuxt.js', 'React', 'JavaScript', 'Node.js', 'TypeScript', 'TailwindCSS'] as string[]
     }
   }
-}
+})
 </script>
+
 <style scoped>
-.skills {
-  padding: 20px;
-}
 .skills ul {
   list-style-type: none;
   display: flex;

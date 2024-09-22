@@ -14,8 +14,19 @@
   </section>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+interface Job {
+  id: number
+  position: string
+  company: string
+  description: string
+  date: string
+  icon: string
+}
+
+export default defineComponent({
   data() {
     return {
       jobs: [
@@ -23,7 +34,7 @@ export default {
           id: 1,
           position: 'Front-End Engineer',
           company: 'Context Labs',
-          description: 'Developed scalable applications.',
+          description: 'Developed user-centric scalable applications.',
           date: 'Dec 2018 - Present',
           icon: '/context_labs_bv_logo.jpeg'
         },
@@ -43,10 +54,10 @@ export default {
           date: 'Dec 2013 - Aug 2016',
           icon: 'syntel_logo.jpeg'
         }
-      ]
+      ] as Job[]
     }
   }
-}
+})
 </script>
 <style scoped>
 .experience {
