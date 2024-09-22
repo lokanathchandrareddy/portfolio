@@ -19,7 +19,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   data() {
     return {
-      skills: ['Vue.js', 'Nuxt.js', 'React', 'JavaScript', 'Node.js', 'TypeScript', 'TailwindCSS'] as string[]
+      skills: ['Vue.js', 'React', 'JavaScript', 'Node.js', 'TypeScript', 'TailwindCSS'] as string[]
     }
   }
 })
